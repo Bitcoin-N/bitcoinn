@@ -34,24 +34,13 @@ const uint64_t CRYPTONOTE_BLOCK_FUTURE_TIME_LIMIT            = 60 * 60 * 2;
 const size_t   BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW             = 60;
 
 // MONEY_SUPPLY - total number coins to be generated
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 const uint64_t MONEY_SUPPLY                                  = UINT64_C(1000000000000000);
 const size_t MIN_MIXIN                                       = 0;
 const uint8_t MANDATORY_MIXIN_BLOCK_VERSION                  = 0;
 const uint32_t MIXIN_START_HEIGHT                            = 0;
 const uint32_t MANDATORY_TRANSACTION                         = 0;
 const uint32_t KILL_HEIGHT                                   = 0;
-=======
-=======
->>>>>>> 72c6faf73f90701133fe5b48fb8059de648b0825
-const uint64_t MONEY_SUPPLY                                  = static_cast<uint64_t>(1000000000000000);
-const size_t MIN_MIXIN                          = 0;
-const uint8_t MANDATORY_MIXIN_BLOCK_VERSION     = 0;
-const uint32_t MIXIN_START_HEIGHT                          = 0;
-const uint32_t MANDATORY_TRANSACTION                          = 0;
-const uint32_t KILL_HEIGHT                          = 0;
->>>>>>> 72c6faf73f90701133fe5b48fb8059de648b0825
 const uint64_t TAIL_EMISSION_REWARD                          = 0;
 const size_t CRYPTONOTE_COIN_VERSION                         = 0;
 const uint32_t ZAWY_DIFFICULTY_BLOCK_INDEX                   = 0;
@@ -68,18 +57,11 @@ const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V2  = 1000000;
 const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V1  = 20000;
 const size_t   CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_CURRENT = CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE;
 const size_t   CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE        = 600;
-<<<<<<< HEAD
+
 const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 6;
 const uint64_t MINIMUM_FEE                                   = UINT64_C(100000);    // pow(10, 6)
 const uint64_t DEFAULT_DUST_THRESHOLD                        = UINT64_C(100);    // pow(10, 6)
-=======
-const size_t   CRYPTONOTE_DISPLAY_DECIMAL_POINT              = 8;
-const uint64_t MINIMUM_FEE                                   = UINT64_C(100000);    // pow(10, 6)
-const uint64_t DEFAULT_DUST_THRESHOLD                        = UINT64_C(100000);    // pow(10, 6)
-<<<<<<< HEAD
->>>>>>> 72c6faf73f90701133fe5b48fb8059de648b0825
-=======
->>>>>>> 72c6faf73f90701133fe5b48fb8059de648b0825
+
 // Use 0 for default max transaction size limit
 const uint64_t MAX_TRANSACTION_SIZE_LIMIT                    = UINT64_C(100000);
 const uint64_t DEFAULT_FEE                                   = MINIMUM_FEE;
@@ -129,15 +111,7 @@ const char     MINER_CONFIG_FILE_NAME[]                      = "miner_conf.json"
 const char     GENESIS_COINBASE_TX_HEX[]                     = "010a01ff0001e2aef88a8d0b029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd088071210103ff3adf7b2180d93a250798f59d6c8ce976e5720e89d177c276b30df08486e9";
 } // parameters
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 const char     CRYPTONOTE_NAME[]                             = "bitcoinnova";
-=======
-const char     CRYPTONOTE_NAME[]                             = "bitcoinn";
->>>>>>> 72c6faf73f90701133fe5b48fb8059de648b0825
-=======
-const char     CRYPTONOTE_NAME[]                             = "bitcoinn";
->>>>>>> 72c6faf73f90701133fe5b48fb8059de648b0825
 
 const uint8_t  TRANSACTION_VERSION_1                         =  1;
 const uint8_t  TRANSACTION_VERSION_2                         =  2;
@@ -168,8 +142,6 @@ const uint32_t P2P_DEFAULT_CONNECTION_TIMEOUT                = 5000;          //
 const uint32_t P2P_DEFAULT_PING_CONNECTION_TIMEOUT           = 2000;          // 2 seconds
 const uint64_t P2P_DEFAULT_INVOKE_TIMEOUT                    = 60 * 2 * 1000; // 2 minutes
 const size_t   P2P_DEFAULT_HANDSHAKE_INVOKE_TIMEOUT          = 5000;          // 5 seconds
-<<<<<<< HEAD
-<<<<<<< HEAD
 const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "";
 
 const char* const SEED_NODES[] = { 
@@ -184,26 +156,14 @@ const char* const SEED_NODES[] = {
   "211.209.79.190:63684"       //
 
 };
-=======
-const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "b878340c70329702e0ab40a0f3475d9a5edf36db6892d759f7fb9b601a001cb3";
->>>>>>> 72c6faf73f90701133fe5b48fb8059de648b0825
-=======
-const char     P2P_STAT_TRUSTED_PUB_KEY[]                    = "b878340c70329702e0ab40a0f3475d9a5edf36db6892d759f7fb9b601a001cb3";
->>>>>>> 72c6faf73f90701133fe5b48fb8059de648b0825
 
-const char* const SEED_NODES[] = { 
-  "85.214.158.156:45222",
-	"37.59.108.203:45222"
-};
-  
 struct CheckpointData {
   uint32_t index;
   const char* blockId;
 };
 
 const std::initializer_list<CheckpointData> CHECKPOINTS = {
-<<<<<<< HEAD
-<<<<<<< HEAD
+
   {0, "06b3f57649384cf2d04378a6b43c469f8451cbe9cc93bab3fc0485973ab0c652"},
   {1000, "3bfaf00ab1c3128bd2091fe5cdcdb4fcb3608e17a64edc6720c7693d68a68cea"},
   {5000, "efb0088688f8734a96fc4e0fe0cc7d206e0fc0d30d0b14a1e3f60ba0e6e9b37e"},
@@ -215,18 +175,7 @@ const std::initializer_list<CheckpointData> CHECKPOINTS = {
   {70000, "30920053a1e6274ffe26888402f5d164dca61e58041e04936c25af7eadf211f1"},
   {80000, "926b5267d0116976ba339f399bfd955acd873ea5de4267318e6f358a6d7faccb"},
   {85000, "9d21a688100f182abe83cc1bc5b8b6e461b62d7621e68eca2da1e319e8046344"}
-=======
-=======
->>>>>>> 72c6faf73f90701133fe5b48fb8059de648b0825
-        {0, "06b3f57649384cf2d04378a6b43c469f8451cbe9cc93bab3fc0485973ab0c652"},
-	{1000, "3bfaf00ab1c3128bd2091fe5cdcdb4fcb3608e17a64edc6720c7693d68a68cea"},
-	{5000, "efb0088688f8734a96fc4e0fe0cc7d206e0fc0d30d0b14a1e3f60ba0e6e9b37e"},
-	{10000, "0cb9f50b855494a107c767a676401f266311c4f47a772244627ab52c737e80c9"},
-	{25000, "e4ea5505ffe4b4c80f5445c9fa038fba07f64996987fc838d5a6d5ef29c798b7"}
-<<<<<<< HEAD
->>>>>>> 72c6faf73f90701133fe5b48fb8059de648b0825
-=======
->>>>>>> 72c6faf73f90701133fe5b48fb8059de648b0825
+
 };
 
 } // CryptoNote
